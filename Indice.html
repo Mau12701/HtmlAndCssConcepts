@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario de HTML y CSS - Índice</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Oswald', sans-serif;
+            background: black;
+            color: white;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        #sidebar {
+            width: 25%;
+            background: linear-gradient(180deg, #900000, #400000);
+            padding: 20px;
+            color: white;
+            box-shadow: 4px 0 15px rgba(255, 0, 0, 0.8);
+        }
+        #sidebar h1 {
+            color: red;
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 2px solid red;
+            padding-bottom: 10px;
+            text-shadow: 3px 3px 10px red;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: white;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        a:hover {
+            color: red;
+            text-shadow: 0 0 10px red;
+        }
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: radial-gradient(circle, rgba(255,0,0,0.3) 0%, black 100%);
+            border-left: 2px solid red;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            box-shadow: 0px 0px 20px red;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h1>Índice</h1>
+        <ul>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\Estructura.html" target="content-frame">Estructura del Documento</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\EtiquetasdeContenidoyTexto.html" target="content-frame">Etiquetas de contenido y texto</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\Listas.html" target="content-frame">Listas</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\EnlacesyNavegación.html" target="content-frame">Enlaces y navegacion</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\Imagenesymultimedia.html" target="content-frame">Imagenes y multimedia</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\Tablas.html" target="content-frame">Tablas</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\FormulariosyEntradasdedatos.html" target="content-frame">Formularios y Entradas de Datos</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\ElementosSemanticosYdeSeccion.html" target="content-frame">Elementos Semanticos y de seccion</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\ElementosInteractivosyGraficos.html" target="content-frame">Elementos interactivos y graficos</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\Elemntosdeinclusionyembebidos.html" target="content-frame">Elementos de inlusion y Embebidos</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\Metainformacionyrecuros.html" target="content-frame">Meta-informacion y recursos</a></li>
+            <li><a href="C:\Users\Mauri\Desktop\GlosarioWeb\EtiquetasObsoletas.html" target="content-frame">Etiquetas Obsoletas (NO recmendadas en html 5)</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <iframe name="content-frame" src="Estructura.html"></iframe>
+    </div>
+</body>
+</html>
